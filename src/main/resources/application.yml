@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: hotel-search-api
+
+  output:
+    ansi:
+      enabled: always
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27018
+      database: avorisdb-hexagonal
+      username: admin
+      password: admin123
+      authentication-database: admin
+
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+kafka:
+  topics:
+    hotel-availability-searches: hotel_availability_searches
+
+logging:
+  level:
+    org.apache.kafka: DEBUG
+    org.springframework.kafka: DEBUG
+    com.avoris.tec.hotelsearch: DEBUG
+
+
+
