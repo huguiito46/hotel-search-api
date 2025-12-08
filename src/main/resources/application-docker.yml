@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo:27017/hotelsearch
+
+  kafka:
+    bootstrap-servers: kafka:9092
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO

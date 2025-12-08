@@ -56,6 +56,19 @@ services:
               properties:
                 bootstrap.servers: "kafka-broker:9092"
 
+  hotel-search-api:
+    build: .
+    container_name: hotel-search-api
+    depends_on:
+      - kafka
+      - mongo
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    restart: always
+
 volumes:
   mongo-data:
+
 

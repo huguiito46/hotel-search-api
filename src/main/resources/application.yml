@@ -6,6 +6,9 @@ spring:
     ansi:
       enabled: always
 
+  profiles:
+    active: local
+
   data:
     mongodb:
       host: localhost
@@ -30,6 +33,7 @@ logging:
     org.apache.kafka: DEBUG
     org.springframework.kafka: DEBUG
     com.avoris.tec.hotelsearch: DEBUG
+
 
 
 
