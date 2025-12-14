@@ -1,0 +1,31 @@
+# Maven build outputs
+target/
+
+# IntelliJ / IDE files
+.idea/
+*.iml
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+logs/
+
+# Node environment (if added later)
+node_modules/
+
+# Docker
+docker-data/
+
+# CI/CD
+.github/
+
+# Temp files
+*.tmp
+*.swp
+*.swo
+
+# Documentation / metadata
+*.md
